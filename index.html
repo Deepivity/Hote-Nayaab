@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Nayaab | Authentic Taste of Hyderabad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Hotel Nayaab Logo">
+                <h1>Hotel Nayaab</h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Our Specialty</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to <span>Hotel Nayaab</span></h2>
+            <p>Where Authentic Taste Meets Tradition</p>
+            <a href="services.html" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT PREVIEW ===== -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-text">
+                <h2>Discover the Essence of <span>Authentic Hyderabadi Cuisine</span></h2>
+                <p>Located opposite Shoe Park in New-Town, Mahabubnagar, Hotel Nayaab is known for its signature dishes like Mutton Biryani, Chicken Biryani, Kebabs, and the famous Irani Chai served even at midnight. Our passion lies in creating food experiences that touch your heart.</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+            <div class="about-img">
+                <img src="images/interior.jpg" alt="Hotel Interior">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED DISHES ===== -->
+    <section class="dishes">
+        <h2>Our Specialties</h2>
+        <div class="dish-container">
+            <div class="dish-card">
+                <img src="images/mutton biryani.jpg" alt="Biryani">
+                <h3>Mutton Biryani</h3>
+                <p>Rich, flavorful, and slow-cooked with aromatic spices — a timeless classic.</p>
+            </div>
+            <div class="dish-card">
+                <img src="images/irani chai.jpg" alt="Irani Chai">
+                <h3>Irani Chai</h3>
+                <p>Hot, comforting, and famous for our midnight and early morning chai.</p>
+            </div>
+            <div class="dish-card">
+                <img src="images/chicken fried  mandi.png.jpg" alt="Mandi">
+                <h3>Arabic Mandi</h3>
+                <p>Fragrant rice and juicy meat served with authentic Middle Eastern flavor.</p>
+            </div>
+        </div>
+        <a href="services.html" class="btn center">View All Dishes</a>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials">
+        <h2>What Our Guests Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"The best Irani chai in town! Perfect spot for late-night cravings."</p>
+                <h4>- Mohammad saffan ali.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Loved the mutton biryani! Authentic and flavorful."</p>
+                <h4>- Charan Bandas.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Great ambience and amazing service. Feels like home every time!"</p>
+                <h4>- Abdul Haseeb.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Hotel Nayaab | All Rights Reserved</p>
+            <p>📍 Opposite of Shoe Park, New-Town, Mahabubnagar, Telangana - 509001</p>
+            <p>📞 +91 81421 33786 | ✉️ rehanmohd816932@gmail.com</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/mohdburan83?igsh=MWZ5MWkzazZkNGhnNg==">Instagram</a> |
+                <a href="https://www.facebook.com/share/1A5KGgwHhB/">Facebook</a> |
+                <a href="https://www.google.com/maps/place/Hotel+NAYAAB+2/@16.7488884,78.0029923,17z/data=!4m6!3m5!1s0x3bca28a757b6af35:0xce6cf1088ceffc9e!8m2!3d16.7488884!4d78.0029923!16s%2Fg%2F11dyx9vkx_?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D/">Google Maps</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

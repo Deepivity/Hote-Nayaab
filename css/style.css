@@ -98,6 +98,20 @@ nav ul li a:hover::after, nav ul li a.active::after {
   width: 100%;
 }
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
 /* ===========================
    HERO SECTION
 =========================== */
@@ -347,13 +361,35 @@ footer .socials a:hover {
 =========================== */
 @media (max-width: 900px) {
   header .container {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  nav.active {
+    display: block;
   }
 
   nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: var(--brown);
+    padding: 10px 0;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
   }
 
   .hero-content h2 {
