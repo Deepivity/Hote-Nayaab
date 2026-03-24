@@ -74,7 +74,10 @@
         <h2>Share Your Experience</h2>
         <p>We value your feedback — it helps us improve and serve you better.</p>
 
-        <form class="feedback-form" action="#" method="post">
+        <form class="feedback-form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="39cbe137-1be9-4cb9-9f73-52d37f4a91cb">
+
             <div class="form-group">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
